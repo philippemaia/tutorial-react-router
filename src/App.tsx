@@ -6,7 +6,6 @@ function App() {
   
   return (
     <>
-    <h1>Bookkeeper!</h1>
     <nav
         style={{
           borderBottom: "solid 1px",
