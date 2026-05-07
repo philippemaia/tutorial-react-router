@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { getInvoices } from "../../data";
 
 export default function Invoices() {
-  let invoices = getInvoices();
+  const invoices = getInvoices();
   return (
     <div style={{ display: "flex" }}>
       <nav
@@ -21,6 +21,7 @@ export default function Invoices() {
           </Link>
         ))}
       </nav>
+      <Outlet />
     </div>
   );
 }
